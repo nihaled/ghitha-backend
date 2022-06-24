@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>Ghitha | Dashboard</title>
 
-  <!-- Google Font: Source Sans Pro -->
+  <!-- Google Font: Source Sans Pro -->          <img src="docs/assets/img/loader.png" alt="Ghitha Logo" class="" style="height: 30px;">
+
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -29,12 +30,12 @@
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 </head>
 
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini sidebar-collapse layout-fixed">
   <div class="wrapper">
 
     <!-- Preloader -->
     <div class="preloader flex-column justify-content-center align-items-center">
-      <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+      <img class="animation__shake" src="docs/assets/img/loader.png" alt="Ghitha Logo" height="60" width="80">
     </div>
 
     <!-- Navbar -->
@@ -44,6 +45,7 @@
         <li class="nav-item">
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
+
         <!-- <li class="nav-item d-none d-sm-inline-block">
           <a href="index3.html" class="nav-link">Home</a>
         </li>
@@ -91,12 +93,11 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar bg-light  elevation-4">
       <!-- Brand Logo -->
-      <div class="d-flex justify-content-center pt-5 pb-3">
+      <div class="info-box d-flex justify-content-center pt-5 pb-3">
         <!-- <a href="index3.html" class="brand-link"> -->
-          <img src="docs/assets/img/loader.png" alt="AdminLTE Logo" class="" style="width: 50%;">
+          <img src="docs/assets/img/loader.png" alt="Ghitha Logo" class="" style="width: 50%;">
         <!-- </a> -->
       </div>
-      
 
       <!-- Sidebar -->
       <div class="sidebar">
@@ -166,7 +167,8 @@
                 <div class="card-header" data-card-widget="collapse">
                   <h3 class="card-title">Edit Banner</h3>
                   <div class="card-tools">
-                    <button type="button" class="btn btn-tool"><i class="fas fa-plus"></i>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-plus"></i>
                     </button>
                   </div>
                   <!-- /.card-tools -->
@@ -184,13 +186,13 @@
                             <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                           </div>
                           <div class="input-group-append">
-                            <span class="input-group-text">Upload</span>
-                          </div>
+                            <button type="button" class="btn btn-warning btn-flat">Upload</button>
+                        </div>
                         </div>
                       </div>
                     </form>
                   </div>
-                  <h5 class="mb-2">Banner</h5>
+                  <h6 class="mb-2 text-bold">Banner</h6>
                   <div class="card card-success">
                     <div class="card-body">
                       <div class="row">
@@ -214,9 +216,8 @@
               <div class="card card-dark collapsed-card">
                 <div class="card-header" data-card-widget="collapse">
                   <h3 class="card-title">Social Media</h3>
-
                   <div class="card-tools">
-                    <button type="button" class="btn btn-tool">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
                       <i class="fas fa-plus"></i>
                     </button>
                   </div>
@@ -236,7 +237,7 @@
                         </div>
                         <input type="text" class="form-control">
                         <span class="input-group-append">
-                          <button type="button" class="btn btn-info btn-flat">Save</button>
+                          <button type="button" class="btn btn-warning btn-flat">Save</button>
                         </span>
                       </div>
                       <!-- /input-group -->
@@ -252,7 +253,7 @@
                         </div>
                         <input type="text" class="form-control">
                         <span class="input-group-append">
-                          <button type="button" class="btn btn-info btn-flat">Save</button>
+                          <button type="button" class="btn btn-warning btn-flat">Save</button>
                         </span>
                       </div>
                       <!-- /input-group -->
@@ -268,7 +269,7 @@
                         </div>
                         <input type="text" class="form-control">
                         <span class="input-group-append">
-                          <button type="button" class="btn btn-info btn-flat">Save</button>
+                          <button type="button" class="btn btn-warning btn-flat">Save</button>
                         </span>
                       </div>
                       <!-- /input-group -->
@@ -286,7 +287,7 @@
                         </div>
                         <input type="text" class="form-control">
                         <span class="input-group-append">
-                          <button type="button" class="btn btn-info btn-flat">Save</button>
+                          <button type="button" class="btn btn-warning btn-flat">Save</button>
                         </span>
                       </div>
                       <!-- /input-group -->
@@ -302,7 +303,7 @@
                         </div>
                         <input type="text" class="form-control">
                         <span class="input-group-append">
-                          <button type="button" class="btn btn-info btn-flat">Save</button>
+                          <button type="button" class="btn btn-warning btn-flat">Save</button>
                         </span>
                       </div>
                       <!-- /input-group -->
@@ -318,7 +319,7 @@
                         </div>
                         <input type="text" class="form-control">
                         <span class="input-group-append">
-                          <button type="button" class="btn btn-info btn-flat">Save</button>
+                          <button type="button" class="btn btn-warning btn-flat">Save</button>
                         </span>
                       </div>
                       <!-- /input-group -->
@@ -336,11 +337,9 @@
                   <h3 class="card-title">Services</h3>
 
                   <div class="card-tools">
-
-                    <button type="button" class="btn btn-tool">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
                       <i class="fas fa-plus"></i>
                     </button>
-
                   </div>
                   <!-- /.card-tools -->
                 </div>
@@ -422,11 +421,11 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
-                  <div class="card card-warning collapsed-card">
+                  <div class="card card-warning">
                     <div class="card-header" data-card-widget="collapse">
                       <h3 class="card-title">Add New News and Media</h3>
                       <div class="card-tools">
-                        <button type="button" class="btn btn-tool"><i class="fas fa-plus"></i>
+                        <button type="button" class="btn btn-tool"><i class="fas fa-minus"></i>
                         </button>
                       </div>
                       <!-- /.card-tools -->
@@ -437,12 +436,12 @@
                         <div class="card-body">
                           <div class="form-group">
                             <label for="exampleInputEmail1">Heading</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Heading">
                           </div>
                           <div class="form-group">
                             <label for="exampleInputPassword1">Date</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                              placeholder="Password">
+                            <input type="date" class="form-control" id="exampleInputPassword1"
+                              placeholder="Enter Date">
                           </div>
                           <div class="form-group">
                             <div class="card-body">
@@ -459,7 +458,7 @@
                                 <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                               </div>
                               <div class="input-group-append">
-                                <span class="input-group-text">Upload</span>
+                                  <button type="button" class="btn btn-warning btn-flat">Upload</button>
                               </div>
                             </div>
                           </div>
@@ -485,11 +484,10 @@
                           <table class="table table-bordered table-hover">
                             <thead>
                               <tr>
-                                <th>#</th>
-                                <th>User</th>
+                                <th>No.</th>
+                                <th>Heading</th>
                                 <th>Date</th>
-                                <th>Status</th>
-                                <th>Reason</th>
+                                <th>Description</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -497,7 +495,6 @@
                                 <td>183</td>
                                 <td>John Doe</td>
                                 <td>11-7-2014</td>
-                                <td>Approved</td>
                                 <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                               </tr>
                               <tr class="expandable-body">
@@ -518,7 +515,6 @@
                                 <td>219</td>
                                 <td>Alexander Pierce</td>
                                 <td>11-7-2014</td>
-                                <td>Pending</td>
                                 <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                               </tr>
                               <tr class="expandable-body">
