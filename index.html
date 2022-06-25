@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ghitha | Dashboard</title>
 
-  <!-- Google Font: Source Sans Pro -->          <img src="docs/assets/img/loader.png" alt="Ghitha Logo" class="" style="height: 30px;">
-
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/docs/assets/img/favicon.png" type="image/x-icon">
+  <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -30,7 +31,7 @@
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 </head>
 
-<body class="hold-transition sidebar-mini sidebar-collapse layout-fixed">
+<body class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">
 
     <!-- Preloader -->
@@ -45,19 +46,12 @@
         <li class="nav-item">
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
-
-        <!-- <li class="nav-item d-none d-sm-inline-block">
-          <a href="index3.html" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline-block">
-          <a href="#" class="nav-link">Contact</a>
-        </li> -->
       </ul>
 
       <!-- Right navbar links -->
-      <ul class="navbar-nav ml-auto">
-        <!-- Navbar Search -->
-        <li class="nav-item">
+      <!-- <ul class="navbar-nav ml-auto"> -->
+      <!-- Navbar Search -->
+      <!-- <li class="nav-item">
           <a class="nav-link" data-widget="navbar-search" href="#" role="button">
             <i class="fas fa-search"></i>
           </a>
@@ -76,17 +70,8 @@
               </div>
             </form>
           </div>
-        </li>
-
-
-        <!-- Notifications Dropdown Menu -->
-
-        <li class="nav-item">
-          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-            <i class="fas fa-expand-arrows-alt"></i>
-          </a>
-        </li>
-      </ul>
+        </li> -->
+      <!-- </ul> -->
     </nav>
     <!-- /.navbar -->
 
@@ -95,7 +80,7 @@
       <!-- Brand Logo -->
       <div class="info-box d-flex justify-content-center pt-5 pb-3">
         <!-- <a href="index3.html" class="brand-link"> -->
-          <img src="docs/assets/img/loader.png" alt="Ghitha Logo" class="" style="width: 50%;">
+        <img src="/docs/assets/img/loader.png" alt="Ghitha Logo" class="" style="width: 50%;">
         <!-- </a> -->
       </div>
 
@@ -117,15 +102,46 @@
             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item menu-open">
-              <a href="" class="nav-link">
+              <a href="index.html" class="nav-link">
                 <i class="fa-solid fa-house-chimney-user"></i>
-                                                <p>Home</p>
+                <p>Home</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#editbanner" class="nav-link">
+                <i class="fa-solid fa-photo-film"></i>
+                <p>
+                  Edit Banner</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#socialmedia" class="nav-link">
+                <i class="fa-solid fa-share-nodes"></i>
+                <p>Social Media</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">
+                <i class="fa-solid fa-handshake"></i>
+                <p>Services</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#privacypolicy" class="nav-link">
+                <i class="fa-solid fa-lock"></i>                
+                <p>Privacy Policy</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="newsandmedia.html" class="nav-link">
+                <i class="fa-solid fa-newspaper"></i>                
+                <p>News and Media</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="" class="nav-link">
                 <i class="fa-solid fa-right-from-bracket"></i>
-                                <p>Logout</p>
+                <p>Logout</p>
               </a>
             </li>
           </ul>
@@ -161,9 +177,9 @@
         <div class="container-fluid">
           <!-- Small boxes (Stat box) -->
           <div class="row">
-            <div class="col-lg-12 col-12">
+            <div id="editbanner" class="col-lg-12 col-12">
               <!-- small box -->
-              <div class="card card-dark collapsed-card">
+              <div class="card card-dark">
                 <div class="card-header" data-card-widget="collapse">
                   <h3 class="card-title">Edit Banner</h3>
                   <div class="card-tools">
@@ -176,377 +192,287 @@
                 <!-- /.card-header -->
                 <div class="card-body">
                   <!-- form start -->
-                  <div class="col-md-6">
-                    <form>
-                      <div class="form-group">
-                        <label for="exampleInputFile">Add Banner file</label>
-                        <div class="input-group">
-                          <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="exampleInputFile">
-                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                  <div class="row">
+                    <div class="col-7 mr-5">
+                      <form>
+                        <div class="form-group">
+                          <label for="addbannerfile">Add Banner file</label>
+                          <div class="input-group">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="exampleInputFile">
+                              <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                            </div>
+                            <div class="input-group-append">
+                              <button type="button" class="btn btn-warning btn-flat">Upload</button>
+                            </div>
                           </div>
-                          <div class="input-group-append">
-                            <button type="button" class="btn btn-warning btn-flat">Upload</button>
                         </div>
+                      </form>
+                      <p>
+                        <span class="text-danger">*</span>
+                        The image must be in JPEG file format.
+                        <br>
+                        <span class="text-danger">*</span>
+                        The image must be less than or equal to 1 MB (kilobytes).
+                      </p>
+                    </div>
+                    <div class="col-3">
+                      <h6 class="mb-2 text-bold">Banner</h6>
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="">
+                              <div class="card mb-2 bg-gradient-dark">
+                                <div>
+                                  <img class="card-img-top" src="../dist/img/photo1.png" alt="Dist Photo 1">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+              </div>
+              <!-- ./col -->
+              <div id="socialmedia" class="col-lg-12 col-12">
+                <!-- small box -->
+                <div class="card card-dark">
+                  <div class="card-header" data-card-widget="collapse">
+                    <h3 class="card-title">Social Media</h3>
+                    <div class="card-tools">
+                      <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                    <!-- /.card-tools -->
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <form action="">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <!-- /input-group -->
+                          <label for="">Facebook</label>
+                          <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <i class="fa-brands fa-facebook"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control">
+                            <span class="input-group-append">
+                              <button type="button" class="btn btn-warning btn-flat">Save</button>
+                            </span>
+                          </div>
+                          <!-- /input-group -->
+                        </div>
+                        <div class="col-lg-4">
+                          <!-- /input-group -->
+                          <label for="">Instagram</label>
+                          <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <i class="fa-brands fa-instagram"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control">
+                            <span class="input-group-append">
+                              <button type="button" class="btn btn-warning btn-flat">Save</button>
+                            </span>
+                          </div>
+                          <!-- /input-group -->
+                        </div>
+                        <div class="col-lg-4">
+                          <!-- /input-group -->
+                          <label for="">LinkedIn</label>
+                          <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <i class="fa-brands fa-linkedin"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control">
+                            <span class="input-group-append">
+                              <button type="button" class="btn btn-warning btn-flat">Save</button>
+                            </span>
+                          </div>
+                          <!-- /input-group -->
+                        </div>
+                      </div>
+                      <div class="row pt-4">
+                        <div class="col-lg-4">
+                          <!-- /input-group -->
+                          <label for="">Facebook</label>
+                          <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <i class="fa-brands fa-facebook"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control">
+                            <span class="input-group-append">
+                              <button type="button" class="btn btn-warning btn-flat">Save</button>
+                            </span>
+                          </div>
+                          <!-- /input-group -->
+                        </div>
+                        <div class="col-lg-4">
+                          <!-- /input-group -->
+                          <label for="">Instagram</label>
+                          <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <i class="fa-brands fa-facebook"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control">
+                            <span class="input-group-append">
+                              <button type="button" class="btn btn-warning btn-flat">Save</button>
+                            </span>
+                          </div>
+                          <!-- /input-group -->
+                        </div>
+                        <div class="col-lg-4">
+                          <!-- /input-group -->
+                          <label for="">LinkedIn</label>
+                          <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <i class="fa-brands fa-facebook"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control">
+                            <span class="input-group-append">
+                              <button type="button" class="btn btn-warning btn-flat">Save</button>
+                            </span>
+                          </div>
+                          <!-- /input-group -->
                         </div>
                       </div>
                     </form>
                   </div>
-                  <h6 class="mb-2 text-bold">Banner</h6>
-                  <div class="card card-success">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-md-12 col-lg-6 col-xl-4">
-                          <div class="card mb-2 bg-gradient-dark">
-                            <div>
-                              <img class="card-img-top" src="../dist/img/photo1.png" alt="Dist Photo 1">
+                  <!-- /.card-body -->
+                </div>
+              </div>
+              <!-- ./col -->
+              <div id="services" class="col-lg-12 col-12">
+                <!-- small box -->
+                <div class="card card-dark">
+                  <div class="card-header" data-card-widget="collapse">
+                    <h3 class="card-title">Services</h3>
+                    <div class="card-tools">
+                      <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                    <!-- /.card-tools -->
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="card card-warning">
+                          <div class="card-header" data-card-widget="collapse">
+                            <h3 class="card-title">Food Items</h3>
+
+                            <div class="card-tools">
+                              <button type="button" class="btn btn-tool"><i class="fas fa-plus"></i>
+                              </button>
                             </div>
+                            <!-- /.card-tools -->
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /.card-body -->
-              </div>
-            </div>
-            <!-- ./col -->
-            <div class="col-lg-12 col-12">
-              <!-- small box -->
-              <div class="card card-dark collapsed-card">
-                <div class="card-header" data-card-widget="collapse">
-                  <h3 class="card-title">Social Media</h3>
-                  <div class="card-tools">
-                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                      <i class="fas fa-plus"></i>
-                    </button>
-                  </div>
-                  <!-- /.card-tools -->
-                </div>
-                <!-- /.card-header -->
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-lg-4">
-                      <!-- /input-group -->
-                      <p>Facebook</p>
-                      <div class="input-group input-group-sm">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">
-                            <i class="fa-brands fa-facebook"></i>
-                          </span>
-                        </div>
-                        <input type="text" class="form-control">
-                        <span class="input-group-append">
-                          <button type="button" class="btn btn-warning btn-flat">Save</button>
-                        </span>
-                      </div>
-                      <!-- /input-group -->
-                    </div>
-                    <div class="col-lg-4">
-                      <!-- /input-group -->
-                      <p>Instagram</p>
-                      <div class="input-group input-group-sm">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">
-                            <i class="fa-brands fa-instagram"></i>
-                          </span>
-                        </div>
-                        <input type="text" class="form-control">
-                        <span class="input-group-append">
-                          <button type="button" class="btn btn-warning btn-flat">Save</button>
-                        </span>
-                      </div>
-                      <!-- /input-group -->
-                    </div>
-                    <div class="col-lg-4">
-                      <!-- /input-group -->
-                      <p>LinkedIn</p>
-                      <div class="input-group input-group-sm">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">
-                            <i class="fa-brands fa-linkedin"></i>
-                          </span>
-                        </div>
-                        <input type="text" class="form-control">
-                        <span class="input-group-append">
-                          <button type="button" class="btn btn-warning btn-flat">Save</button>
-                        </span>
-                      </div>
-                      <!-- /input-group -->
-                    </div>
-                  </div>
-                  <div class="row pt-4">
-                    <div class="col-lg-4">
-                      <!-- /input-group -->
-                      <p>Facebook</p>
-                      <div class="input-group input-group-sm">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">
-                            <i class="fa-brands fa-facebook"></i>
-                          </span>
-                        </div>
-                        <input type="text" class="form-control">
-                        <span class="input-group-append">
-                          <button type="button" class="btn btn-warning btn-flat">Save</button>
-                        </span>
-                      </div>
-                      <!-- /input-group -->
-                    </div>
-                    <div class="col-lg-4">
-                      <!-- /input-group -->
-                      <p>Instagram</p>
-                      <div class="input-group input-group-sm">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">
-                            <i class="fa-brands fa-facebook"></i>
-                          </span>
-                        </div>
-                        <input type="text" class="form-control">
-                        <span class="input-group-append">
-                          <button type="button" class="btn btn-warning btn-flat">Save</button>
-                        </span>
-                      </div>
-                      <!-- /input-group -->
-                    </div>
-                    <div class="col-lg-4">
-                      <!-- /input-group -->
-                      <p>LinkedIn</p>
-                      <div class="input-group input-group-sm">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">
-                            <i class="fa-brands fa-facebook"></i>
-                          </span>
-                        </div>
-                        <input type="text" class="form-control">
-                        <span class="input-group-append">
-                          <button type="button" class="btn btn-warning btn-flat">Save</button>
-                        </span>
-                      </div>
-                      <!-- /input-group -->
-                    </div>
-                  </div>
-                </div>
-                <!-- /.card-body -->
-              </div>
-            </div>
-            <!-- ./col -->
-            <div class="col-lg-12 col-12">
-              <!-- small box -->
-              <div class="card card-dark collapsed-card">
-                <div class="card-header" data-card-widget="collapse">
-                  <h3 class="card-title">Services</h3>
-
-                  <div class="card-tools">
-                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                      <i class="fas fa-plus"></i>
-                    </button>
-                  </div>
-                  <!-- /.card-tools -->
-                </div>
-                <!-- /.card-header -->
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="card card-warning collapsed-card">
-                        <div class="card-header" data-card-widget="collapse">
-                          <h3 class="card-title">Food Items</h3>
-
-                          <div class="card-tools">
-                            <button type="button" class="btn btn-tool"><i class="fas fa-plus"></i>
-                            </button>
-                          </div>
-                          <!-- /.card-tools -->
-                        </div>
-                        <!-- /.card-header -->
-                        <div class="card-body">
+                          <!-- /.card-header -->
                           <div class="card-body">
-                            <textarea id="summernote1">
+                            <form action="">
+                              <div class="card-body">
+                                <textarea id="summernote1">
                               Place <em>some</em> <u>text</u> <strong>here</strong>
                             </textarea>
+                              </div>
+                              <div class="card-footer">
+                                <button type="submit" class="btn btn-primary">Save</button>
+                              </div>
+                            </form>
                           </div>
-                          <div class="card-footer">
-                            <button type="submit" class="btn btn-primary">Save</button>
-                          </div>
+                          <!-- /.card-body -->
                         </div>
-                        <!-- /.card-body -->
+                        <!-- /.card -->
                       </div>
-                      <!-- /.card -->
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-md-6">
-                      <div class="card card-warning collapsed-card">
-                        <div class="card-header" data-card-widget="collapse">
-                          <h3 class="card-title">Non Food Items</h3>
-
-                          <div class="card-tools">
-                            <button type="button" class="btn btn-tool"><i class="fas fa-plus"></i>
-                            </button>
+                      <!-- /.col -->
+                      <div class="col-md-6">
+                        <div class="card card-warning">
+                          <div class="card-header" data-card-widget="collapse">
+                            <h3 class="card-title">Non Food Items</h3>
+                            <div class="card-tools">
+                              <button type="button" class="btn btn-tool"><i class="fas fa-plus"></i>
+                              </button>
+                            </div>
+                            <!-- /.card-tools -->
                           </div>
-                          <!-- /.card-tools -->
-                        </div>
-                        <!-- /.card-header -->
-                        <div class="card-body">
+                          <!-- /.card-header -->
                           <div class="card-body">
-                            <textarea id="summernote1">
+                            <form action="">
+                              <div class="card-body">
+                                <textarea id="summernote1">
                               Place <em>some</em> <u>text</u> <strong>here</strong>
                             </textarea>
-                          </div>
-                          <div class="card-footer">
-                            <button type="submit" class="btn btn-primary">Save</button>
-                          </div>
-                        </div>
-                        <!-- /.card-body -->
-                      </div>
-                      <!-- /.card -->
-                    </div>
-                    <!-- /.col -->
-                  </div>
-                  <!-- /.row -->
-                </div>
-                <!-- /.card-body -->
-              </div>
-            </div>
-            <!-- ./col -->
-            <div class="col-lg-12 col-12">
-              <!-- small box -->
-              <div class="card card-dark collapsed-card">
-                <div class="card-header" data-card-widget="collapse">
-                  <h3 class="card-title">News and Media</h3>
-                  <div class="card-tools">
-                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                      <i class="fas fa-plus"></i>
-                    </button>
-                  </div>
-                  <!-- /.card-tools -->
-                </div>
-                <!-- /.card-header -->
-                <div class="card-body">
-                  <div class="card card-warning">
-                    <div class="card-header" data-card-widget="collapse">
-                      <h3 class="card-title">Add New News and Media</h3>
-                      <div class="card-tools">
-                        <button type="button" class="btn btn-tool"><i class="fas fa-minus"></i>
-                        </button>
-                      </div>
-                      <!-- /.card-tools -->
-                    </div>
-                    <!-- /.card-header -->
-                    <div class="card-body">
-                      <form>
-                        <div class="card-body">
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">Heading</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Heading">
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputPassword1">Date</label>
-                            <input type="date" class="form-control" id="exampleInputPassword1"
-                              placeholder="Enter Date">
-                          </div>
-                          <div class="form-group">
-                            <div class="card-body">
-                              <textarea id="summernote2">
-                                  Place <em>some</em> <u>text</u> <strong>here</strong>
-                                </textarea>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputFile">Add Image</label>
-                            <div class="input-group">
-                              <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="exampleInputFile">
-                                <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                               </div>
-                              <div class="input-group-append">
-                                  <button type="button" class="btn btn-warning btn-flat">Upload</button>
+                              <div class="card-footer">
+                                <button type="submit" class="btn btn-primary">Save</button>
                               </div>
-                            </div>
+                            </form>
                           </div>
+                          <!-- /.card-body -->
                         </div>
-                        <!-- /.card-body -->
-
-                        <div class="card-footer">
-                          <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                      </form>
-                    </div>
-                    <!-- /.card-body -->
-                  </div>
-
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="card">
-                        <div class="card-header">
-                          <h3 class="card-title">Previous News and Media</h3>
-                        </div>
-                        <!-- ./card-header -->
-                        <div class="card-body">
-                          <table class="table table-bordered table-hover">
-                            <thead>
-                              <tr>
-                                <th>No.</th>
-                                <th>Heading</th>
-                                <th>Date</th>
-                                <th>Description</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr data-widget="expandable-table" aria-expanded="false">
-                                <td>183</td>
-                                <td>John Doe</td>
-                                <td>11-7-2014</td>
-                                <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                              </tr>
-                              <tr class="expandable-body">
-                                <td colspan="5">
-                                  <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
-                                    Ipsum.
-                                  </p>
-                                </td>
-                              </tr>
-                              <tr data-widget="expandable-table" aria-expanded="true">
-                                <td>219</td>
-                                <td>Alexander Pierce</td>
-                                <td>11-7-2014</td>
-                                <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                              </tr>
-                              <tr class="expandable-body">
-                                <td colspan="5">
-                                  <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
-                                    Ipsum.
-                                  </p>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <!-- /.card-body -->
+                        <!-- /.card -->
                       </div>
-                      <!-- /.card -->
+                      <!-- /.col -->
                     </div>
+                    <!-- /.row -->
                   </div>
+                  <!-- /.card-body -->
                 </div>
-                <!-- /.card-body -->
               </div>
+              <!-- ./col -->
+              <div id="privacypolicy" class="col-lg-12 col-12">
+                <!-- small box -->
+                <div class="card card-dark">
+                  <div class="card-header" data-card-widget="collapse">
+                    <h3 class="card-title">Privacy policy</h3>
+                    <div class="card-tools">
+                      <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                    <!-- /.card-tools -->
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <div>
+                      <label for="AddNewNewsandMedia">Edit Privacy Policy</label>
+                    </div>
+                    <form action="">
+                      <div class="card-body col-12">
+                        <textarea id="summernote1">
+                      Place <em>some</em> <u>text</u> <strong>here</strong>
+                    </textarea>
+                      </div>
+                      <div class="card-footer">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+              </div>
+              <!-- ./col -->
             </div>
-            <!-- ./col -->
-          </div>
-          <!-- /.row -->
-        </div><!-- /.container-fluid -->
+            <!-- /.row -->
+          </div><!-- /.container-fluid -->
       </section>
       <!-- /.content -->
     </div>
